@@ -116,13 +116,13 @@ STATUS 	Status
 
 # 3.1.3.2 Dealing with Outliers
 
-    Outliers are data points that significantly deviate from the majority of the data in a dataset. They are observations that lie at an abnormal distance from other observations, and they can have a substantial impact on statistical analyses and modeling.
+Outliers are data points that significantly deviate from the majority of the data in a dataset. They are observations that lie at an abnormal distance from other observations, and they can have a substantial impact on statistical analyses and modeling.
 
-    Outliers can occur due to various reasons, such as measurement errors, data entry mistakes, natural variations, or genuine extreme values in the data.
+Outliers can occur due to various reasons, such as measurement errors, data entry mistakes, natural variations, or genuine extreme values in the data.
 
 # 3.2 Exploratory Data Analysis
 
-        In this section, we shall be exploring the columns in the dataset. We shall be performing the following
+In this section, we shall be exploring the columns in the dataset. We shall be performing the following
 
     Univariate Analysis
 
