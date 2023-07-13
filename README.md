@@ -12,10 +12,10 @@ The end user is the bank that will use this deployment in conjunction with their
 
 # 1.3 Project Objectives
 
-    Develop a credit scoring model that incorporates personal and social factors and machine learning algorithms to enhance the accuracy of creditworthiness predictions.
-    Improve transparency in credit scoring by utilizing interpretable machine learning techniques, allowing for clear explanations of acceptance or rejection decisions to customers and regulatory bodies.
-    Mitigate the impact of economic fluctuations on credit scoring models by incorporating dynamic factors and adapting the model to changing economic conditions.
-    Optimize the balance between prediction accuracy and interpretability to ensure a fair and reliable credit scoring system for both applicants and financial institutions.
+Develop a credit scoring model that incorporates personal and social factors and machine learning algorithms to enhance the accuracy of creditworthiness predictions.
+Improve transparency in credit scoring by utilizing interpretable machine learning techniques, allowing for clear explanations of acceptance or rejection decisions to customers and regulatory bodies.
+Mitigate the impact of economic fluctuations on credit scoring models by incorporating dynamic factors and adapting the model to changing economic conditions.
+Optimize the balance between prediction accuracy and interpretability to ensure a fair and reliable credit scoring system for both applicants and financial institutions.
 
 # 1.4 Success Metrics.
 
@@ -23,12 +23,12 @@ We set a specific target for our credit card approval prediction model, aiming t
 
 # 2. Data Understanding
 
-    This phase is broken down into four tasks together with its projected outcome or output in detail:
+This phase is broken down into four tasks together with its projected outcome or output in detail:
 
-        Collect Initial Data
-        Describe Data
-        Explore Data
-        Verify Data Quality
+Collect Initial Data
+Describe Data
+Explore Data
+Verify Data Quality
 
 The data for this project was sourced from Kaggle . This data consists of information of past application and credits
 
@@ -54,9 +54,9 @@ FLAG_EMAIL 	Is there an email
 OCCUPATION_TYPE 	Occupation
 CNT_FAM_MEMBERS 	Family size
 
-    Note -
-    DAYS_BIRTH ---> Count backwards from current day (0), -1 means yesterday
-    DAYS_EMPLOYED ---> Count backwards from current day(0). If positive, it means the person currently unemployed.
+Note -
+DAYS_BIRTH ---> Count backwards from current day (0), -1 means yesterday
+DAYS_EMPLOYED ---> Count backwards from current day(0). If positive, it means the person currently unemployed.
 
 # 2.2 Credits Dataset
 Feature name 	Explanation
@@ -64,53 +64,53 @@ ID 	Client number
 MONTHS_BALANCE 	Record month
 STATUS 	Status
 
-    Note -
-    MONTHS_BALANCE ---> The month of the extracted data is the starting point, backwards, 0 is the current month, -1 is the previous month, and so on.
-    STATUS ---> 0: 1-29 days past due 1: 30-59 days past due 2: 60-89 days overdue 3: 90-119 days overdue 4: 120-149 days overdue 5: Overdue or bad debts, write-offs for more than 150 days C: paid off that month X: No loan for the month
+Note -
+MONTHS_BALANCE ---> The month of the extracted data is the starting point, backwards, 0 is the current month, -1 is the previous month, and so on.
+STATUS ---> 0: 1-29 days past due 1: 30-59 days past due 2: 60-89 days overdue 3: 90-119 days overdue 4: 120-149 days overdue 5: Overdue or bad debts, write-offs for more than 150 days C: paid off that month X: No loan for the month
 
 # 2.3 Merged Dataset
 
 # 3. Data Preparation
 
-    This phase, which is often referred to as “data munging”, prepares the final data set(s) for modeling. It has the following tasks:
+This phase, which is often referred to as “data munging”, prepares the final data set(s) for modeling. It has the following tasks:
 
-        Clean Data
-        EDA
-        Data Preprocessing
+Clean Data
+EDA
+Data Preprocessing
 
 # 3.1 Clean Data
 
-    In this section, we will be looking at the missing values, duplicate records in the dataset as well as the outliers in the dataset.
+In this section, we will be looking at the missing values, duplicate records in the dataset as well as the outliers in the dataset.
 
 # 3.1.1 Completeness
 
-    We will be considering the completeness of the dataset in this section. In this section, we will be looking at the missing values in the dataset.
+We will be considering the completeness of the dataset in this section. In this section, we will be looking at the missing values in the dataset.
 
 # 3.1.2 Uniformity
 
-    In this section, we will be looking at the uniformity of the data. Uniformity refers to the consistency of the data with respect to the formatting, labelling. We will be looking at the following:
+In this section, we will be looking at the uniformity of the data. Uniformity refers to the consistency of the data with respect to the formatting, labelling. We will be looking at the following:
 
-        Labelling
-        Formatting
+Labelling
+Formatting
 
 # 3.1.2.1 Labelling
 
-    Labelling refers to the consistency of the data with respect to the labelling of the data. We will be looking at the following:
+Labelling refers to the consistency of the data with respect to the labelling of the data. We will be looking at the following:
 
-        Are the columns small case?
-        Are there any spaces?
-        Are they interpretable?
+Are the columns small case?
+Are there any spaces?
+Are they interpretable?
 
 # 3.1.2.2 Formatting
 
-    The formatting of the data refers to the consistency of the data with respect to the datatypes of the columns.
+The formatting of the data refers to the consistency of the data with respect to the datatypes of the columns.
 
 # 3.1.3 Validity
 
-    In this section, we will be looking at the validity of the data. We will be looking at the following:
+In this section, we will be looking at the validity of the data. We will be looking at the following:
 
-        Duplicated Data
-        Outliers
+Duplicated Data
+Outliers
 
 # 3.1.3.1 Dealing with duplicates
 
@@ -124,11 +124,11 @@ Outliers can occur due to various reasons, such as measurement errors, data entr
 
 In this section, we shall be exploring the columns in the dataset. We shall be performing the following
 
-    Univariate Analysis
+Univariate Analysis
 
-    Bivariate Analysis
+Bivariate Analysis
 
-    Multi-variate Analysis
+Multi-variate Analysis
 
 # 3.2.1 Univariate Analysis
 
