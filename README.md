@@ -139,13 +139,11 @@ STATUS 	Status
 # 3.3. Data Preprocessing
 # 3.3.1 Feature Engineering
 
-        Creating an approval status column from the Status Column
-
 # 3.3.2 Feature selection
 
 # 4. Modeling
 
-    In the modeling phase, we will address the issue of class imbalance before training our models. We will start with a decision tree as our baseline model, which provides a good understanding of feature-target relationships. Then, we will explore ensemble models such as Random Forest, AdaBoost, Gradient Boosting, and XGBoost. 
+In the modeling phase, we will address the issue of class imbalance before training our models. We will start with a decision tree as our baseline model, which provides a good understanding of feature-target relationships. Then, we will explore ensemble models such as Random Forest, AdaBoost, Gradient Boosting, and XGBoost. 
 
 # 4.1 Splitting the Dataset
 
@@ -175,27 +173,37 @@ The evaluation metric for this project is the recall score of the classes of the
 
 # Decision Tree Classifier:
 Rationale.
+
 Results.
+
 Limitations.
 
 # Random Forest Classifier:
 Rationale.
+
 Results.
+
 Limitations.
 
 # Adaboost Rationale:
 Rationale.
+
 Results.
+
 Limitations.
 
 # Gradient Boost:
 Rationale.
+
 Results.
+
 Limitations.
 
 # XGBoost:
 Rationale.
+
 Results.
+
 Limitations.
 
 # Finding the best model, and incorporation shap values for recommendation purposes.
