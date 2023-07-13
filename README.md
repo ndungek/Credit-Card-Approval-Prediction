@@ -1,5 +1,6 @@
 ## Credit-Card-Approval-Prediction
-https://www.kaggle.com/rikdifos/credit-card-approval-prediction
+![Uploading image.png…]()
+
 # Business Understanding
 # 1.1 Introduction
 
