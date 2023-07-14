@@ -190,7 +190,7 @@ Paul Kamau: @kamaa.njuguna16@yahoo.com
 
 Beatrice Kirui: @beatriceckirui15@gmail.com
 
-Cliff Shitote: 
+Cliff Shitote: @cliffbrecht6@gmail.com
 
 Repository Structure:
 ├── .gitignore
