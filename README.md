@@ -1,5 +1,6 @@
 ## Credit-Card-Approval-Prediction
-![Uploading image.png…]()
+![image](https://github.com/ndungek/Credit-Card-Approval-Prediction/assets/124627374/5244e353-a1ce-4476-b220-ecdea5a081a7)
+
 
 # Business Understanding
 # 1.1 Introduction
