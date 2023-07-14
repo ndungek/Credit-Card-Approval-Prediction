@@ -81,22 +81,22 @@ Clean Data
 EDA
 Data Preprocessing
 
-# 3.1 Clean Data
+3.1 Clean Data
 
 In this section, we will be looking at the missing values, duplicate records in the dataset as well as the outliers in the dataset.
 
-# 3.1.1 Completeness
+3.1.1 Completeness
 
 We will be considering the completeness of the dataset in this section. In this section, we will be looking at the missing values in the dataset.
 
-# 3.1.2 Uniformity
+3.1.2 Uniformity
 
 In this section, we will be looking at the uniformity of the data. Uniformity refers to the consistency of the data with respect to the formatting, labelling. We will be looking at the following:
 
 Labelling
 Formatting
 
-# 3.1.2.1 Labelling
+3.1.2.1 Labelling
 
 Labelling refers to the consistency of the data with respect to the labelling of the data. We will be looking at the following:
 
@@ -104,20 +104,20 @@ Are the columns small case?
 Are there any spaces?
 Are they interpretable?
 
-# 3.1.2.2 Formatting
+3.1.2.2 Formatting
 
 The formatting of the data refers to the consistency of the data with respect to the datatypes of the columns.
 
-# 3.1.3 Validity
+3.1.3 Validity
 
 In this section, we will be looking at the validity of the data. We will be looking at the following:
 
 Duplicated Data
 Outliers
 
-# 3.1.3.1 Dealing with duplicates
+3.1.3.1 Dealing with duplicates
 
-# 3.1.3.2 Dealing with Outliers
+3.1.3.2 Dealing with Outliers
 
 Outliers are data points that significantly deviate from the majority of the data in a dataset. They are observations that lie at an abnormal distance from other observations, and they can have a substantial impact on statistical analyses and modeling.
 
@@ -133,42 +133,35 @@ Bivariate Analysis
 
 Multi-variate Analysis
 
-# 3.2.1 Univariate Analysis
-
-# 3.2.2 Bivariate Analysis
-
-# 3.2.3 Multivariate Analysis
-
 # 3.3. Data Preprocessing
-# 3.3.1 Feature Engineering
+3.3.1 Feature Engineering
 
-# 3.3.2 Feature selection
+3.3.2 Feature selection
 
 # 4. Modeling
 
 In the modeling phase, we will address the issue of class imbalance before training our models. We will start with a decision tree as our baseline model, which provides a good understanding of feature-target relationships. Then, we will explore ensemble models such as Random Forest, AdaBoost, Gradient Boosting, and XGBoost. 
 
-# 4.1 Splitting the Dataset
+4.1 Splitting the Dataset
 
-# 4.2 Handling Class Imbalance
+4.2 Handling Class Imbalance
 
-# 4.3 Decision Tree Classifier (Baseline Model)
+4.3 Decision Tree Classifier (Baseline Model)
 
-# 4.4 Random Forest Classifier
+4.4 Random Forest Classifier
+- Random Forest Classifier with best parameters
 
-# 4.4.1 Random Forest Classifier with best parameters
+4.5 AdaBoostClassifier
 
-# 4.5 AdaBoostClassifier
+- AdaBoostClassifier with best parameters
 
-# 4.5.1 AdaBoostClassifier with best parameters
+4.6 Gradient Boosting
 
-# 4.6 Gradient Boosting
+- 4.6.1 Gradient Boosting Classifier with best parameters
 
-# 4.6.1 Gradient Boosting Classifier with best parameters
+4.7 XGB Classifier
 
-# 4.7 XGB Classifier
-
-# 4.7.1 XGB Classifier with the best parameters
+- 4.7.1 XGB Classifier with the best parameters
 
 # 5. Model Evaluation.
 
