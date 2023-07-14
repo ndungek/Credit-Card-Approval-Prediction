@@ -38,37 +38,62 @@ The data for this project was sourced from Kaggle . This data consists of inform
 # 2.1 Applications Dataset
 
 Feature name 	Explanation
+
 ID 	Client number
+
 CODE_GENDER 	Gender
+
 FLAG_OWN_CAR 	Is there a car
+
 FLAG_OWN_REALTY 	Is there a property
+
 CNT_CHILDREN 	Number of children
+
 AMT_INCOME_TOTAL 	Annual income
+
 NAME_INCOME_TYPE 	Income category
+
 NAME_EDUCATION_TYPE 	Education level
+
 NAME_FAMILY_STATUS 	Marital status
+
 NAME_HOUSING_TYPE 	Way of living
+
 DAYS_BIRTH 	Birthday
+
 DAYS_EMPLOYED 	Start date of employment
+
 FLAG_MOBIL 	Is there a mobile phone
+
 FLAG_WORK_PHONE 	Is there a work phone
+
 FLAG_PHONE 	Is there a phone
+
 FLAG_EMAIL 	Is there an email
+
 OCCUPATION_TYPE 	Occupation
+
 CNT_FAM_MEMBERS 	Family size
 
 Note -
+
 DAYS_BIRTH ---> Count backwards from current day (0), -1 means yesterday
+
 DAYS_EMPLOYED ---> Count backwards from current day(0). If positive, it means the person currently unemployed.
 
 # 2.2 Credits Dataset
 Feature name 	Explanation
+
 ID 	Client number
+
 MONTHS_BALANCE 	Record month
+
 STATUS 	Status
 
 Note -
+
 MONTHS_BALANCE ---> The month of the extracted data is the starting point, backwards, 0 is the current month, -1 is the previous month, and so on.
+
 STATUS ---> 0: 1-29 days past due 1: 30-59 days past due 2: 60-89 days overdue 3: 90-119 days overdue 4: 120-149 days overdue 5: Overdue or bad debts, write-offs for more than 150 days C: paid off that month X: No loan for the month
 
 # 2.3 Merged Dataset
@@ -204,6 +229,46 @@ Limitations.
 
 # Finding the best model, and incorporation shap values for recommendation purposes.
 
-# Conclusion.
+# 6. Conclusion.
 
-# Reccomendation.
+* After the models were evaluated, the Decision Tree model was selected as the final model based on high performance on evaluation metrics. Training Accuracy: 0.870 Testing Accuracy: 0.789 Recall Score: 0.85 were achieved by the final model, indicating its ability to classify approval or denial status with high accuracy and low false positives and false negatives.
+
+* The dataset was highly imbalanced, with a small percentage of denial status, with the majority being approved on their credit card application.
+
+* Traditional credit scoring methods based on financial metrics have limitations in accurately predicting creditworthiness, especially during economic fluctuations. Machine learning algorithms, when applied to credit scoring, have shown promise in enhancing prediction accuracy.
+
+* It was observed that the most common status is "C" (likely_good_debtor), followed by "X" (likely_good_debtor) and "0" (Neutral_Debtor). Features such as income type, property ownership, gender, and family status showed relationships with the credit approval status.
+
+* Based on the bank's risk appetite, debtors can be categorized as "Approved" (likely_good_debtor, Neutral_Debtor) or "Denied" (likely_Bad_Debtor, likely_written_off) based on the credit approval status.
+
+# 7. Reccomendation.
+
+* Further explore the reasons behind different loan statuses ("C," "X," "0," etc.) to gain insights into loan approval decisions.
+
+* Conduct additional research or collect more data to better understand the demographic and social economic factors contributing to loan approval.
+
+* Explore the use of additional data sources, such as social media activity or online transaction history, to improve credit assessment and enhance predictive accuracy.
+
+* Establish a process for ongoing evaluation and refinement of the credit scoring model, including regular updates and retraining based on new data and feedback.
+
+* Conduct training and educational programs to enhance stakeholders' understanding of the credit scoring system, promoting transparency and empowering customers to make informed financial decisions.
+
+By implementing these specific recommendations, stakeholders can enhance the accuracy, transparency, and fairness of their credit approval process, leading to improved risk assessment, customer satisfaction, and financial outcomes.
+
+# 8. Limitations.
+
+* The dataset used has limited number of features while there could be other factors that contribute to the credit approval status.
+* The quality and availability of data can significantly impact the project. Limitations may include incomplete or missing data, data with errors or inconsistencies, biased or unrepresentative data, or limited access to relevant data sources.
+* The evolving nature of data science introduces the risk of project outcomes becoming outdated as new methods, techniques, and data sources emerge.
+* Different algorithms have inherent limitations, such as assumptions about data distribution, sensitivity to outliers, or constraints on features or samples, which can impact the accuracy and effectiveness of the results.
+
+# 9. Next steps.
+* New features can be generated from the existing data to provide more insights.
+* Explore alternative data sources or consider data augmentation techniques to enhance the quality and availability of the data.
+* Consider incorporating more complex modeling techniques or exploring ensemble methods to capture nuances and avoid oversimplification.
+* Regularly review and keep up-to-date with advancements in algorithms and techniques to leverage new approaches that overcome limitations.
+* Regularly reassess and update models or approaches to incorporate new methods, algorithms, or data sources as they become available.
+
+# 10. Deployment.
+
+We deployed our prediction in a web application using Streamlit and it can be accessed online
