@@ -1,6 +1,9 @@
-## Credit-Card-Approval-Prediction
-![image](https://github.com/ndungek/Credit-Card-Approval-Prediction/assets/124627374/5244e353-a1ce-4476-b220-ecdea5a081a7)
+## REVOLUTIONIZING CREDIT CARD APPROVAL WITH METRIC MARVINS
 
+
+Metric Marvins stands out as the premier credit analyst, leveraging the prowess of historical data and advanced machine learning techniques. Our state-of-the-art model excels in accurately predicting creditworthiness, adapting seamlessly to economic fluctuations, and outperforming traditional scoring methods.
+
+![image](https://github.com/ndungek/Credit-Card-Approval-Prediction/assets/124627374/5244e353-a1ce-4476-b220-ecdea5a081a7)
 
 # Business Understanding
 # 1.1 Introduction
@@ -15,23 +18,19 @@ The end user is the bank that will use this deployment in conjunction with their
 
 # 1.3 Project Objectives
 
-Develop a credit scoring model that incorporates personal and social factors and machine learning algorithms to enhance the accuracy of creditworthiness predictions.
-Improve transparency in credit scoring by utilizing interpretable machine learning techniques, allowing for clear explanations of acceptance or rejection decisions to customers and regulatory bodies.
-Mitigate the impact of economic fluctuations on credit scoring models by incorporating dynamic factors and adapting the model to changing economic conditions.
-Optimize the balance between prediction accuracy and interpretability to ensure a fair and reliable credit scoring system for both applicants and financial institutions.
+1. Develop a credit scoring model that incorporates personal and social factors and machine learning algorithms to enhance the accuracy of creditworthiness predictions.
+2. Improve transparency in credit scoring by utilizing interpretable machine learning techniques, allowing for clear explanations of acceptance or rejection decisions to customers and regulatory bodies.
+3. Mitigate the impact of economic fluctuations on credit scoring models by incorporating dynamic factors and adapting the model to changing economic conditions.
+4. Optimize the balance between prediction accuracy and interpretability to ensure a fair and reliable credit scoring system for both applicants and financial institutions.
 
 # 1.4 Success Metrics.
 
-We set a specific target for our credit card approval prediction model, aiming to achieve a recall score of 80%. This means our focus is on maximizing the identification of approved credit card applications, minimizing the chances of false negatives and ensuring a high level of accuracy in predicting positive outcomes.
+We set a ``specific target for our credit card approval prediction model``, aiming to achieve a ``recall score of 80%``. This means our focus is on maximizing the identification of approved credit card applications, minimizing the chances of false negatives and ensuring a high level of accuracy in predicting positive outcomes.
 
 # 2. Data Understanding
 
-This phase is broken down into four tasks together with its projected outcome or output in detail:
-
-Collect Initial Data
-Describe Data
-Explore Data
-Verify Data Quality
+For this project, we utilized a dataset  sourced from [Kaggle](https://www.kaggle.com/datasets/rikdifos/credit-card-approval-prediction).There are two datasets,the Applications Dataset and the Credits Dataset. The Applications dataset has 438557 rows and 18 columns. The Credits dataset has 1048575 rows and 3 columns.
+The features encompass social and economic factors that have an impact on the credit card application status of individual applicants
 
 The data for this project was sourced from Kaggle . This data consists of information of past application and credits
 
@@ -96,138 +95,33 @@ MONTHS_BALANCE ---> The month of the extracted data is the starting point, backw
 
 STATUS ---> 0: 1-29 days past due 1: 30-59 days past due 2: 60-89 days overdue 3: 90-119 days overdue 4: 120-149 days overdue 5: Overdue or bad debts, write-offs for more than 150 days C: paid off that month X: No loan for the month
 
-# 2.3 Merged Dataset
+## 2.1Data Preprocessing
+ During our thorough analysis of the raw data, we discovered missing values specifically in the occupation variable. To address this, we performed imputation techniques to fill in the missing values. Additionally, we conducted outlier detection to identify and handle any extreme values present in the dataset.
 
-# 3. Data Preparation
+ Furthermore, we addressed duplicated entries by removing them to ensure data integrity. To enhance clarity and consistency, we renamed variables appropriately. In order to establish uniformity, we converted certain variables to a yearly basis. Additionally, we adjusted the data types of variables as needed to ensure accurate and efficient analysis.
 
-This phase, which is often referred to as “data munging”, prepares the final data set(s) for modeling. It has the following tasks:
+## 2.2 Data Analysis (EDA)
 
-Clean Data
-EDA
-Data Preprocessing
+ We conducted an in-depth analysis of the dataset to uncover patterns, trends, and insights. This included analyzing the Status of the clients based their previous loan payments.
 
-3.1 Clean Data
+![Alt text](image.png)
 
-In this section, we will be looking at the missing values, duplicate records in the dataset as well as the outliers in the dataset.
+C - indicates that the client has paid off the loan in full for that particular month.
+X- suggests that the client did not have any loan obligations for that specific month
+Overdue ,write offs- indicating bad debts or write-offs that have been pending for more than 150 days.
+The others indicates the  client's payment is overdue by certain  number of days
 
-3.1.1 Completeness
 
-We will be considering the completeness of the dataset in this section. In this section, we will be looking at the missing values in the dataset.
+# 3. Modeling
 
-3.1.2 Uniformity
+We opted for the Decision Tree Classifier as our final model. This choice was driven by its interpretability, which enables us to gain insights into the decision-making process and provide transparent explanations for credit card application outcomes.
 
-In this section, we will be looking at the uniformity of the data. Uniformity refers to the consistency of the data with respect to the formatting, labelling. We will be looking at the following:
+### The model results:
 
-Labelling
-Formatting
+- Training Accuracy: 0.870
+- Testing Accuracy: 0.789
+- Recall Score: 0.85
 
-3.1.2.1 Labelling
-
-Labelling refers to the consistency of the data with respect to the labelling of the data. We will be looking at the following:
-
-Are the columns small case?
-Are there any spaces?
-Are they interpretable?
-
-3.1.2.2 Formatting
-
-The formatting of the data refers to the consistency of the data with respect to the datatypes of the columns.
-
-3.1.3 Validity
-
-In this section, we will be looking at the validity of the data. We will be looking at the following:
-
-Duplicated Data
-Outliers
-
-3.1.3.1 Dealing with duplicates
-
-3.1.3.2 Dealing with Outliers
-
-Outliers are data points that significantly deviate from the majority of the data in a dataset. They are observations that lie at an abnormal distance from other observations, and they can have a substantial impact on statistical analyses and modeling.
-
-Outliers can occur due to various reasons, such as measurement errors, data entry mistakes, natural variations, or genuine extreme values in the data.
-
-# 3.2 Exploratory Data Analysis
-
-In this section, we shall be exploring the columns in the dataset. We shall be performing the following
-
-Univariate Analysis
-
-Bivariate Analysis
-
-Multi-variate Analysis
-
-# 3.3. Data Preprocessing
-3.3.1 Feature Engineering
-
-3.3.2 Feature selection
-
-# 4. Modeling
-
-In the modeling phase, we will address the issue of class imbalance before training our models. We will start with a decision tree as our baseline model, which provides a good understanding of feature-target relationships. Then, we will explore ensemble models such as Random Forest, AdaBoost, Gradient Boosting, and XGBoost. 
-
-4.1 Splitting the Dataset
-
-4.2 Handling Class Imbalance
-
-4.3 Decision Tree Classifier (Baseline Model)
-
-4.4 Random Forest Classifier
-- Random Forest Classifier with best parameters
-
-4.5 AdaBoostClassifier
-
-- AdaBoostClassifier with best parameters
-
-4.6 Gradient Boosting
-
-- 4.6.1 Gradient Boosting Classifier with best parameters
-
-4.7 XGB Classifier
-
-- 4.7.1 XGB Classifier with the best parameters
-
-# 5. Model Evaluation.
-
-The evaluation metric for this project is the recall score of the classes of the credit approval status in this project we are using the following algorithms to predict the credit approval status of each credit card applicant and these were the results.
-
-# Decision Tree Classifier:
-Rationale.
-
-Results.
-
-Limitations.
-
-# Random Forest Classifier:
-Rationale.
-
-Results.
-
-Limitations.
-
-# Adaboost Rationale:
-Rationale.
-
-Results.
-
-Limitations.
-
-# Gradient Boost:
-Rationale.
-
-Results.
-
-Limitations.
-
-# XGBoost:
-Rationale.
-
-Results.
-
-Limitations.
-
-# Finding the best model, and incorporation shap values for recommendation purposes.
 
 # 6. Conclusion.
 
@@ -269,6 +163,49 @@ By implementing these specific recommendations, stakeholders can enhance the acc
 * Regularly review and keep up-to-date with advancements in algorithms and techniques to leverage new approaches that overcome limitations.
 * Regularly reassess and update models or approaches to incorporate new methods, algorithms, or data sources as they become available.
 
-# 10. Deployment.
+# Installations
+To install and run this project, follow these steps:
 
-We deployed our prediction in a web application using Streamlit and it can be accessed online
+Clone the repository to your local machine using the following command:
+git clone https://github.com/ndungek/Credit-Card-Approval-Prediction
+Navigate to the project's root directory:
+cd your-repository
+Install the project dependencies(For this project we worked with Jupyter notebook, however it can also run on vscode or Google collab:
+This command will install all the necessary packages and libraries required for the project to run(this should br run in the terminal(for our case Anaconda).
+pip install Jupyter Notebook
+Call the note book in the directory
+jupyter notebook
+code .. for VS code
+Open your web browser and access the application at http://localhost:5000. This is the default URL where the application will be running locally.
+Collaborators
+feel free to visit this jupyternotebook and contact below emails
+
+Leah Katiwa: @katiwaleah26@gmail.com
+
+Maureen Kitang'a: @ndungek66@gmail.com
+
+Ronald Nyagaka: 
+
+Paul Kamau: @kamaa.njuguna16@yahoo.com
+
+Beatrice Kirui: @beatriceckirui15@gmail.com
+
+Cliff Shitote: 
+
+Repository Structure:
+├── .gitignore
+
+├── CONTRIBUTING
+
+├── LISENCE.md
+
+|── Phase4_project.ipynb
+
+├── data
+
+├── README.md
+
+Web app link: 
+
+Project status
+The current version of the project is finished and ready for use. Improvements will be made later.
