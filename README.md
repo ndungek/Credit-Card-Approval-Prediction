@@ -12,7 +12,7 @@ Credit score cards are widely used in the financial industry to evaluate the ris
 
 # 1.2 Problem Statement
 
-The existing credit scoring methods rely on historical data and traditional financial metrics like debt-to-income ratios, face limitations in accurately predicting creditworthiness due to economic fluctuations. The introduction of machine learning algorithms has shown promise in enhancing credit scoring accuracy but lacks transparency in explaining acceptance or rejection decisions. As a result, there is a need to develop a credit scoring model that leverages both historical data and advanced machine learning techniques to improve prediction capabilities while providing transparent and interpretable results for customers and regulators. The objective is to create a reliable and transparent credit scoring system that effectively assesses the risk of issuing credit cards based on applicants' personal information, contributing to informed decision-making by financial institutions and ensuring fair treatment of applicants.
+Existing credit scoring methods based on historical data and traditional financial metrics face limitations in predicting creditworthiness accurately due to economic fluctuations. There is a need to develop a credit scoring model that leverages historical data and advanced machine learning techniques for better prediction while providing transparent results for customers and regulators. The goal is to create a reliable and transparent credit scoring system that informs decision-making and ensures fair treatment of applicants.
 
 The end user is the bank that will use this deployment in conjunction with their own to complement the credit scoring system
 
