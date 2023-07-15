@@ -6,9 +6,9 @@ Metric Marvins stands out as the premier credit analyst, leveraging the prowess 
 ![image](https://github.com/ndungek/Credit-Card-Approval-Prediction/assets/124627374/5244e353-a1ce-4476-b220-ecdea5a081a7)
 
 # Business Understanding
-# 1.1 Introduction
+# 1.1 Project Overview
 
-In the financial industry, credit score cards are extensively utilized to evaluate the risk associated with issuing credit cards to applicants. These cards utilize historical data to anticipate potential defaults and credit card borrowing patterns, enabling banks to make well-informed decisions regarding card approval. Nevertheless, the reliability of traditional approaches, such as assessing financial metrics like debt-to-income ratios and utilization ratios can be impacted by economic fluctuations. To enhance credit scoring, alternative methods like machine learning algorithms have been introduced. Although these methods enhance prediction accuracy, they often lack transparency, creating challenges in providing clear explanations for acceptance or rejection decisions to both customers and regulatory bodies.
+Credit score cards are widely used in the financial industry to evaluate the risk of issuing credit cards. Traditional methods can be affected by economic fluctuations, prompting the use of machine learning algorithms. While these improve accuracy, they often lack transparency in explaining acceptance or rejection decisions to customers and regulators. This Project aims to improve transparency in the whole process quantifying the reasons why one is approved or denied a credit card
 
 # 1.2 Problem Statement
 
