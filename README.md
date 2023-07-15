@@ -129,13 +129,11 @@ We opted for the Decision Tree Classifier as our final model. This choice was dr
 
 * The dataset was highly imbalanced, with a small percentage of denial status, with the majority being approved on their credit card application.
 
-* Traditional credit scoring methods based on financial metrics have limitations in accurately predicting creditworthiness, especially during economic fluctuations. Machine learning algorithms, when applied to credit scoring, have shown promise in enhancing prediction accuracy.
-
 * It was observed that the most common status is "C" (likely_good_debtor), followed by "X" (likely_good_debtor) and "0" (Neutral_Debtor). Features such as income type, property ownership, gender, and family status showed relationships with the credit approval status.
 
 * Based on the bank's risk appetite, debtors can be categorized as "Approved" (likely_good_debtor, Neutral_Debtor) or "Denied" (likely_Bad_Debtor, likely_written_off) based on the credit approval status.
 
-# 7. Reccomendation.
+# 7. Recommendation.
 
 * Further explore the reasons behind different loan statuses ("C," "X," "0," etc.) to gain insights into loan approval decisions.
 
@@ -184,7 +182,7 @@ Leah Katiwa: @katiwaleah26@gmail.com
 
 Maureen Kitang'a: @ndungek66@gmail.com
 
-Ronald Nyagaka: 
+Ronald Nyagaka: nyagaka@outlook.com
 
 Paul Kamau: @kamaa.njuguna16@yahoo.com
 
